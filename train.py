@@ -14,9 +14,9 @@ def parse_args():
   parser.add_argument('--model_name', default = 'vgg16', type = str, help = 'choose the model architecture (vgg16 or resnet18')
   parser.add_argument('--learning_rate', default = 0.001, type = float, help = 'learning rate')
   parser.add_argument('--hidden_sizes', default = [10024, 1024], nargs = '+', type = int, help='list of integers, the sizes of the hidden layers')
-  parser.add_argument('--epochs', default=3, type=int, help='number of epochs to train the model')
-  parser.add_argument('--gpu_mode', default=True, type=bool, help='set the gpu mode')
-  parser.add_argument('--checkpoint_path', default='checkpoint.pth', type=str, help='name of checkpoint file to save the model in')
+  parser.add_argument('--epochs', default = 3, type = int, help = 'number of epochs to train the model')
+  parser.add_argument('--gpu_mode', default = True, type = bool, help = 'set the gpu mode')
+  parser.add_argument('--checkpoint_path', default = 'checkpoint.pth', type = str, help='name of checkpoint file to save the model in')
   args = parser.parse_args()
   return args
 
